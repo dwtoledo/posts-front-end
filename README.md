@@ -1,4 +1,4 @@
-# O que é HTML? Principais Tags e Dicas do VS Code.
+# 1 - O que é HTML? Principais Tags e Dicas do VS Code.
 
 ## **O que é HTML?**
 
@@ -164,4 +164,8 @@ Espero que você tenha aprendido muito!
 
 ## **Quer aprender mais?**
 Te convido a visitar o meu canal na Twitch: https://www.twitch.tv/dwtoledo.
-Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre conceitos de HTML. 
+Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre conceitos de HTML.
+
+*Próximas publicações:*
+[2 - Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.]()
+[3 - Tags HTML para Tabelas e Dicas do VS Code.]()
