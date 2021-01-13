@@ -1,168 +1,202 @@
-# Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.
-**Antes de começar, já vou te dar duas dicas!**
-&nbsp;
-**Dica 01:** Enquanto estou estruturando um conteúdo HTML eu sempre deixo aberto um guia rápido para possíveis dúvidas.
-&nbsp;
-Eu gosto bastante desse [Guia de Referências HTML HostingerBR](https://github.com/hostinger/banners/blob/master/br/Guia-de-Refer%C3%AAncias-HTML-HostingerBR.pdf?raw=true).
-&nbsp;
-**Dica 02:** O Visual Studio Code (VS Code) nos ajuda bastante na digitação de tags HTML, a dica é a mesma para todas as tags dessa leitura:
-   * No VS Code comece digitando o nome da tag;
-   * Ele irá reconhecer a tag e exibirá um pop-up;
-![nome da tag sendo reconhecida pelo Visual Studio Code](https://dev-to-uploads.s3.amazonaws.com/i/3dyrzecig6cam08au90g.png)
-   * Aperte Enter e o VS Code irá adicionar automaticamente a tag de abertura e fechamento (se houver).
-![preenchimento automático do Visual Studio Code](https://dev-to-uploads.s3.amazonaws.com/i/xjv14o4cm98972kkuksk.png)
-   * Para algumas tags ele irá adicionar outros campos essenciais, como o texto alternativo *alt=""* da tag *\<img>* que é muito importante para a acessibilidade de imagens nas páginas que estamos criando.
-![preenchimento automático do Visual Studio Code](https://dev-to-uploads.s3.amazonaws.com/i/9l3i85z6bzqg842i0j87.png)
+# 3 - Tags HTML para Tabelas e Dicas do VS Code.
 
-___
+*Publicações anteriores:*
+[1 - O que é HTML? Principais Tags e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/README.md)
+[2 - Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/2%20-%20Tags%20HTML%20mais%20utilizadas%2C%20C%C3%B3digo%20Sem%C3%A2ntico%20e%20Dicas%20do%20VS%20Code.md)
 
+Para mim, Tabelas em HTML é um pouco trabalhoso, pois têm muitas tags. Vou tentar explicar da maneira mais simples possível, pois você merece né! Vamos lá!
 
-### Agora vamos às Tags!
-+ **Cabeçalhos:**
+### Vamos replicar a tabela abaixo?
 
-Temos 6 tags para cabeçalhos e títulos, elas vão do \<h1> até o \<h6>, quanto menor o número do h, maior a fonte, ou seja, \<h1> é a maior delas e \<h6> é a menor. Veja abaixo:
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/a2i2bvxzzo414xsw6ehi.png)
 
-```html
-<h1>Cabeçalho 1</h1>
-<h2>Cabeçalho 2</h2>
-<h3>Cabeçalho 3</h3>
-<h4>Cabeçalho 4</h4>
-<h5>Cabeçalho 5</h5>
-<h6>Cabeçalho 6</h6>
-```
+Na tabela, temos:
+* Os cabeçalhos (em inglês *header*): Nome e Sobrenome e;
+* Os dados (em inglês *data*): Douglas Toledo 29 e Lorem Ipsum 35.
+* O rodapé (em inglês *footer*): Média 32
 
-# Cabeçalho 1
-## Cabeçalho 2
-### Cabeçalho 3
-#### Cabeçalho 4
-##### Cabeçalho 5
-###### Cabeçalho 6
+____
 
-___
+### **Agora preciso que você abra o seu coração pro HTML:**
+#### Em HTML a tabela é divida em três partes:
 
-* **Parágrafos:** quando queremos adicionar um texto na página, geralmente usamos a tag \<p> *paragraph*.
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/i1foa9zghtag5yxbf94x.png)
 
-```html
-<p>Isso é um parágrafo de texto</p>
-```
-Em alguns momentos, quando não é possível usar o CSS para formatar um texto, utiliza-se algumas tags HTML. Exemplo:
-* Vamos supor que no *"Isso é um parágrafo de texto"* você quer deixar apenas a palavra *"parágrafo"* em negrito ou itálico?
+* \<thead> *table header* (em verde) é onde colocamos os cabeçalhos: Nome, Sobrenome e Idade;
+* \<tbody> *table body* (em azul) é onde colocamos os dados: Douglas, Toledo, 29, Lorem, Ipsum e 35;
+* \<tfoot> *table footer* (em roxo) é onde colocamos os dados do rodapé: Média e 29.
 
-&nbsp;
+____
 
-Para **negrito** você pode utilizar a tag **\<strong>**:
-```html
-<p>Isso é um <strong>parágrafo</strong> de texto</p>
-```
-Resultado: Isso é um **parágrafo** de texto
+#### Para criamos linhas:
 
-&nbsp;
+* Tanto em \<thead>, \<tbody> e \<tfoot> usamos a tag \<tr> *table row*:
 
-Para *itálico* você pode utilizar a tag *\<i>*:
-```html
-<p>Isso é um <i>parágrafo</i> de texto</p>
-```
-Resultado: Isso é um *parágrafo* de texto
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/a2zpeqhhg7tavr8pdwmo.png)
 
-&nbsp;
+____
 
-*Lembre-se, HTML estrutura, CSS estiliza/formata, então evite utilizar tags de formatação e estilização no HTML. Caso seja realmente necessário há outras tags de formatação no guia disponibilizado no início dessa leitura.*
-___
+#### Para criamos cabeçalhos no \<thead>:
 
-* **Listas Ordenadas:** para a criação de uma lista ordenada, ou seja, a ordem dos itens é importante, utilizamos a tag \<ol> *ordered list* e adicionamos os itens da lista com a tag \<li> *list item*.
+* Usamos a tag \<th> *table head*:
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/7gnx1btxqnkd6fgdf7g4.png)
+
+____
+
+#### Para criamos dados no \<tbody> e no \<tfoot>:
+
+* Usamos a tag \<td> *table data*:
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/f4zsn966caz5ixfog7rm.png)
+
+____
+
+### Na prática:
+Começamos montando uma tabela abrindo e fechando a tag \<table>:
 
 ```html
-<ol>
-	<li>Item 1</li>
-	<li>Item 2</li>
-	<li>Item 3</li>
-</ol>
-```
-1. Item 1
-2. Item 2
-3. Item 3
+<table>
 
-*Note que no resultado acima a lista numera cada um dos itens. Como temos 3 itens, a numeração foi de 1 a 3.*
-___
-* **Listas Não Ordenadas:** para a criação de uma lista não ordenada, ou seja, a ordem dos itens não é importante, utilizamos a tag \<ul> *unordered list* e também adicionamos os itens da lista com a tag \<li> *list item*.
+</table>
+```
+
+### 1 - Table Header
+Agora vamos adicionar a primeira parte de uma tabela, os cabeçalhos (usando a tag \<thead>):
 
 ```html
-<ul>
-	<li>Item 1</li>
-	<li>Item 2</li>
-	<li>Item 3</li>
-</ul>
+<table>
+	<thead>
+
+	</thead>
+</table>
 ```
 
-* Item 1
-* Item 2
-* Item 3
+Adicionamos uma linha usando a tag \<tr> para começar a escrever os cabeçalhos:
+```html
+<table>
+	<thead>
+		<tr>
 
-*Note que no resultado acima a lista apenas colocou um símbolo na frente de cada item.*
-___
-* **Imagens:** para adicionar imagens na página é utilizado a tag \<img>.
+		</tr>
+	</thead>
+</table>
+```
+E adicionamos cada cabeçalho usando a tag \<th>:
 
 ```html
-<img src="" alt="">
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Sobrenome</th>
+			<th>Idade</th>
+		</tr>
+	</thead>
+</table>
 ```
-*Note que é a primeira vez que temos algo dentro de uma tag. Chamamos src="" e alt="" de atributos da tag \<img>. São nos atributos que colocamos informações básicas de uma tag.*
 
-Na tag \<img> temos dois atributos básicos:
-* **src=""** é onde a imagem está localizada e;
-* **alt=""** é o texto alternativo (essencial para a acessibilidade das páginas para pessoas que tem deficiência visual ou quando a imagem por algum motivo não for carregada, o texto alternativo será exibido).
+**Agora presta atenção nessa dica maravilhosa:** no VS Code temos um atalho para escrever tags HTML que irá nos ajudar na criação de tabelas:
 
-Na prática, se formos adicionar a imagem do logo Google, temos:
+1. Abra o VS Code, crie um arquivo .html, digite ! e aperte Enter para criar uma estrutura básica HTML;
+2. Entre as tags \<body> e \</body> vai digitando table>thead>tr>th+th+th;
+3. Aperte Enter!
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/pdantqq0v8hwdk904eut.gif)
+
+Temos todo o código feito acima de maneira rápida. É só colocar os 3 cabeçalhos (Nome, Sobrenome e Idade). Explicando o atalho:
+
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/6ouwjv781i35ox840y0z.png)
+
+O resultado até o momento deverá ser:
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/tzm9530vjswwom00n221.png)
+
+### 2 - Table Body
+Agora vamos para a segunda parte da tabela adicionando os dados (usando a tag \<tbody>) abaixo do cabeçalho \<thead>:
 
 ```html
-<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo do Google">
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Sobrenome</th>
+			<th>Idade</th>
+		</tr>
+	</thead>
+
+	<tbody>
+
+	</tbody>
+</table>
 ```
 
-onde:
-* *src="[https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png) e;*
-* *alt="Logo do Google".*
-
-o resultado é:
-![Logo do Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
-
-___
-
-* **Links:** para levar o usuário até um link interno ou externo da página é utilizado a tag \<a> *anchor*. Veja um exemplo:
+Como temos duas linhas de dados, vamos inserir duas tags \<tr> *table row*:
 
 ```html
-<a href="https://google.com" target="_blank">Clique aqui!</a>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Sobrenome</th>
+			<th>Idade</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+
+		</tr>
+		<tr>
+
+		</tr>
+	</tbody>
+</table>
 ```
-Na tag \<a> temos um atributo básico e outros opcionais:
 
-* *O atributo básico href="" é o link de destino.
-No exemplo, ao clicarmos no link ele nos levará ao "https://google.com";*
-
-* *O atributo target="_blank" indica que o link será aberto numa nova aba ou página, esse atributo é opcional.*
-
-O resultado do código é:
-[Clique aqui!](https://google.com)
-
-___
-
-**Já que colocamos uma imagem \<img> e um link \<a> do Google, que tal se unirmos os dois?** Sim, podemos usar a tag \<a> para direcionar o usuário a um link após ele clicar numa imagem!
+E por fim, colocamos cada um dos nossos dados usando a tag \<td> *table data*, uma tag para cada dado:
 
 ```html
-<a href="https://google.com" target="_blank">
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo do Google">
-</a>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Sobrenome</th>
+			<th>Idade</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Douglas</td>
+			<td>Toledo</td>
+			<td>29</td>
+		</tr>
+		<tr>
+			<td>Lorem</td>
+			<td>Ipsum</td>
+			<td>35</td>
+		</tr>
+	</tbody>
+</table>
 ```
 
-Resultado:
-[![Logo do Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)](https://www.google.com)
+**Atalho do VS Code**
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/qhzfuyex1sgzxmd2n57y.gif)
 
-___
+Olha o resultado parcial (sem o \<tfoot>):
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/qy1recibi4crbeupm9wf.png)
 
-Ainda tenho que falar das tags de Tabelas e Formulários.
-Como essa leitura está ficando um pouco extensa, vou deixar para falar dela na próxima publicação, não percam!
+### 3 - Table Footer
+Agora o \<tfoot> ficou fácil!
+Fica como a minha lição de casa para você! rs
 
 ## **Parabéns!!!**
 Fico muito feliz que chegou até o final dessa publicação.
 Espero que você tenha aprendido muito!
 
 ## **Quer aprender mais?**
-Te convido a visitar o meu canal na Twitch: https://www.twitch.tv/dwtoledo.
-Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre conceitos de HTML.
+Te convido a visitar e seguir o meu canal lá na Twitch: https://www.twitch.tv/dwtoledo.
+Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre conceitos de HTML!
+
+*Próximas publicações:*
+*Em breve* 4 - Tags HTML para Formulários e Dicas do VS Code.
