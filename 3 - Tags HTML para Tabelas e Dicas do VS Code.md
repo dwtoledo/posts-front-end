@@ -1,7 +1,9 @@
 # 3 - Tags HTML para Tabelas e Dicas do VS Code.
 
 *Publicações anteriores:*
+
 [1 - O que é HTML? Principais Tags e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/README.md)
+
 [2 - Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/2%20-%20Tags%20HTML%20mais%20utilizadas%2C%20C%C3%B3digo%20Sem%C3%A2ntico%20e%20Dicas%20do%20VS%20Code.md)
 
 Para mim, Tabelas em HTML é um pouco trabalhoso, pois têm muitas tags. Vou tentar explicar da maneira mais simples possível, pois você merece né! Vamos lá!
@@ -199,4 +201,5 @@ Te convido a visitar e seguir o meu canal lá na Twitch: https://www.twitch.tv/d
 Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre conceitos de HTML!
 
 *Próximas publicações:*
+
 *Em breve* 4 - Tags HTML para Formulários e Dicas do VS Code.

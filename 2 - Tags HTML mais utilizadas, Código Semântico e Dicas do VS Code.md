@@ -1,6 +1,7 @@
 # 2 - Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.
 
 *Publicações anteriores:*
+
 [1 - O que é HTML? Principais Tags e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/README.md)
 
 **Antes de começar, já vou te dar duas dicas!**
@@ -172,4 +173,5 @@ Te convido a visitar o meu canal na Twitch: https://www.twitch.tv/dwtoledo.
 Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre conceitos de HTML.
 
 *Próximas publicações:*
+
 [3 - Tags HTML para Tabelas e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/3%20-%20Tags%20HTML%20para%20Tabelas%20e%20Dicas%20do%20VS%20Code.md)
