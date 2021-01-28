@@ -172,6 +172,6 @@ Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre c
 
 [3 - Tags HTML para Tabelas e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/3%20-%20Tags%20HTML%20para%20Tabelas%20e%20Dicas%20do%20VS%20Code.md)
 
-[4 - Tags HTML para Formulários e Dicas do VS Code.]()
+[4 - Tags HTML para Formulários e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/4%20-%20Tags%20HTML%20para%20Formul%C3%A1rios%20e%20Dicas%20do%20VS%20Code.md)
 
-[5 - Tags HTML que você precisa conhecer e Dicas do VS Code.]()
+[5 - Tags HTML que você precisa conhecer e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/5%20-%20Tags%20HTML%20que%20voc%C3%AA%20precisa%20conhecer%20e%20Dicas%20do%20VS%20Code.md)

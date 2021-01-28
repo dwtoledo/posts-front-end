@@ -6,7 +6,7 @@
 
 [2 - Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/2%20-%20Tags%20HTML%20mais%20utilizadas%2C%20C%C3%B3digo%20Sem%C3%A2ntico%20e%20Dicas%20do%20VS%20Code.md)
 
-[3 - Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/3%20-%20Tags%20HTML%20para%20Tabelas%20e%20Dicas%20do%20VS%20Code.md)
+[3 - Tags HTML para Tabelas e Dicas do VS Code](https://github.com/dwtoledo/posts-front-end/blob/main/3%20-%20Tags%20HTML%20para%20Tabelas%20e%20Dicas%20do%20VS%20Code.md)
 
 
 Agora que você já viu [...]
@@ -224,3 +224,7 @@ Espero que você tenha aprendido muito!
 ## **Quer aprender mais?**
 Te convido a visitar e seguir o meu canal lá na Twitch: https://www.twitch.tv/dwtoledo.
 Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre conceitos de HTML!
+
+*Próximas publicações:*
+
+[5 - Tags HTML que você precisa conhecer e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/5%20-%20Tags%20HTML%20que%20voc%C3%AA%20precisa%20conhecer%20e%20Dicas%20do%20VS%20Code.md)

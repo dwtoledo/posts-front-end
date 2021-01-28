@@ -1,4 +1,4 @@
-# 4 - Tags HTML para Formulários e Dicas do VS Code.
+# 5 - Tags HTML que você precisa conhecer e Dicas do VS Code.
 
 *Publicações anteriores:*
 
@@ -6,214 +6,154 @@
 
 [2 - Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/2%20-%20Tags%20HTML%20mais%20utilizadas%2C%20C%C3%B3digo%20Sem%C3%A2ntico%20e%20Dicas%20do%20VS%20Code.md)
 
-[3 - Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/3%20-%20Tags%20HTML%20para%20Tabelas%20e%20Dicas%20do%20VS%20Code.md)
+[4 - Tags HTML para Tabelas e Dicas do VS Code](https://github.com/dwtoledo/posts-front-end/blob/main/3%20-%20Tags%20HTML%20para%20Tabelas%20e%20Dicas%20do%20VS%20Code.md)
 
+[4 - Tags HTML para Formulários e Dicas do VS Code](https://github.com/dwtoledo/posts-front-end/blob/main/4%20-%20Tags%20HTML%20para%20Formul%C3%A1rios%20e%20Dicas%20do%20VS%20Code.md)
 
 Agora que você já viu [...]
 * as principais tags e;
-* tabelas em HTML;
+* tabelas e;
+* formulários em HTML.
 
-[...] chegou a hora dos Formulários!
+[...] chegou a hora daquelas tags pouco conhecidas, mas que você precisa conhecer!
 
-## Vamos replicar o formulário abaixo?
+### **Tag \<details>**
+Quando usada com a tag \<summary> faz com que um conteúdo escondido seja exibido ao clicar no elemento *summary*. Se clicar novamente, o conteúdo é escondido. E o melhor, sem precisar de JavaScript!
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ok062ze4v2413e5s2pcp.png)
-
-No formulário, temos:
-* Duas entradas de texto ("Nome" e "Senha");
-* Uma seleção através de botões radiais ("Selecione a tarefa");
-* Uma seleção através de uma lista de dados ("Selecione o status da tarefa");
-
-____
-
-### **Vamos por partes, se não vamos complicar as coisas!**
-
-1. Usamos a *tag \<input>* para o usuário digitar os dados;
-2. Definimos qual é o tipo do dado usando o atributo *type=""*;
-3. Definimos um nome para esse campo usando o atributo *name=""*;
-
-Exemplo em que o usuário irá digitar a sua idade:
+Podemos criar *drop-menu* com essa funcionalidade. Olha só que legal!
 
 ```html
-<input type="number" name="idade">
+<details>
+        <summary>Menu</summary>
+        <a href="https://google.com/" target="_blank">Google</a><br>
+        <a href="https://bing.com/" target="_blank">Bing</a><br>
+        <a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a>
+    </details>
 ```
 
-Há mais de 20 tipos de dados! **É muito importante você colocar o tipo correto** para que o navegador prepare a página para receber aquele tipo de dado específico.
+O resultado é um Menu que ao clicarmos exibe 3 links (Google, Bing e DuckDuckGo):
 
-Exemplos:
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/hc4jz3bsa9g5vey2wmaq.gif)
 
-* Se você colocar o *type="password"*, o navegador irá entender que o dado é uma senha e ela não ficará visível durante a digitação.
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ajsykqbzb0bsp28jxcm7.PNG)
+Se tivermos um conteúdo logo abaixo, ele será "empurrado" ou "puxado" quando clicarmos no Menu, veja um exemplo:
 
-* Se você colocar o *type=color*, o navegador irá entender que o dado é uma cor e irá abrir uma seleção de paleta de cores.
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/jzr1rekywcacoffkbl6j.png)
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/9y4js7aa3a6uetybh54d.gif)
+___
 
-* Se você colocar o *type=date*, o navegador irá entender que o dado é uma data e irá formatar o campo para uma fácil digitação e ou seleção de data.
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/l6t1po05ygfuiy5a0m8m.png)
+### **Tag \<source> com a tag \<audio>**
 
-Você pode ver a lista completa de todos os tipos de inputs no link [HTML Input Types - W3Schools](https://www.w3schools.com/html/html_form_input_types.asp)!
+Você sabia que cada navegador tem preferência por um determinado tipo de audio? O navegador Safari da maça por exemplo, adora o audio ogg!
 
-____
-
-#### No formulário inicial, para as duas entradas de texto ("Nome" e "Senha"):
-
-Nome é *type="text"*, então vamos começar nosso formulário adicionando o campo *nome*:
+Então vamos dar aos navegadores o que eles querem para evitar que seu conteúdo não fique disponível para o usuário, segue um exemplo:
 
 ```html
-<input type="text" name="nome">
+<audio controls>
+     <source src="./sound.mp3" type="audio/mpeg">
+     <source src="./sound.ogg" type="audio/ogg">
+     Seu navegador não suporta a tag de audio.
+</audio>
 ```
+O resultado é:
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/tpyubrxrlwajciwu94f2.png)
 
-Senha é *type="password"*, então vamos adicionar o campo *senha* após uma quebra de linha (*tag \<br>*):
+O navegador irá mostrar a mensagem "Seu navegador não suporta a tag de audio." caso não consiga carregar nenhuma opção de arquivo de áudio.
+
+___
+
+### **Tag \<source> com a tag \<video>**
+
+Semelhante ao audio:
 
 ```html
-<input type="text" name="nome">
-<br>
-<input type="password" name="senha">
+<video controls>
+        <source src="./video.mp4" type="video/mp4">
+        <source src="./video.mov" type="video/mov">
+        Seu navegador não suporta a tag de vídeo.
+</video>
 ```
-O resultado do html é:
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/wtsvy3gefvwi85a9h258.jpg)
 
-*Mas Douglas, cadê a legenda ("Nome:" e "Senha:") e a descrição do campo ("Insira seu nome" e "Insira sua senha")?*
+O resultado é um player de vídeo:
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/g5y76dy8ns3mycqfvg78.png)
 
-* Para a legenda "Nome:", usamos a *tag \<label>*, no seu atributo *for=""* colocamos o nome do campo usado na *tag \<input>* e entre a abertura e fechamento das *tags* digitamos a legenda;
+O navegador irá mostrar a mensagem "Seu navegador não suporta a tag de vídeo." caso não consiga carregar nenhuma opção de arquivo de vídeo.
 
-* Para a descrição "Insira seu nome", usamos o atributo *placeholder=""* da *tag \<input>*.
+Encontrei uma explicação mais detalhada sobre os formatos de audio e vídeos compatíveis nos navegadores, **recomendo a leitura: [MDN Web Docs - Formatos de mídia suportados por elementos HTML de áudio e vídeo
+](https://developer.mozilla.org/pt-BR/docs/Web/HTML/formatos_midia_suportados)**
 
-Colocando a legenda e descrição, temos:
+___
+
+### **Tag \<picture>**
+Você sabia que é possível deixar suas imagens mais responsivas* só com HTML e sem usar CSS? Usamos a tag picture da seguinte maneira:
 
 ```html
-<label for="nome">Nome:</label>
-<input type="text" name="nome" placeholder="Insira seu nome">
-<br>
-<label for="senha">Senha:</label>
-<input type="password" name="senha" placeholder=""Insira sua senha>
+<picture>
+        <source media="(min-width: 512px)" srcset="./512.jpg">
+        <source media="(min-width: 256px)" srcset="./256.jpg">
+        <img src="./150.jpg" alt="">
+</picture>
 ```
+###### *carregar uma imagem de menor resolução para telas menores e carregar uma imagem com resolução maior para telas maiores.
 
-Olha o resultado!
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/8hgwo0ucimcyu6z5sqi4.jpg)
+Explicando:
+* se a tela é maior que 512px, o HTML irá carregar "512.jpg";
+* se a tela é entre 256px e 512px, o HTML irá carregar "256.jpg";
+* se a tela é menor que 256px, será carregado "150.jpg".
+* **a ordem é muito importante, sempre do maior tamanho de tela ao menor, caso contrário, não irá funcionar muito bem.**
 
-____
-
-#### Voltando ao formulário inicial, vamos continuar com a seleção através de botões radiais e seleção através de uma lista de dados:
-
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/dl5koiucofdpc2j4w89b.png)
-
-____
-
-* Para a seleção através de botões radiais usamos *\<input type="radio">*:
-
-```html
-<label for="tarefa">Seleciona uma tarefa:</label>
-<br>
-<input name="tarefa" type="radio" value="varrer-a-casa"> Varrer a casa
-<input name="tarefa" type="radio" value="lavar-a-louca"> Lavar a louça
-<input name="tarefa" type="radio" value="arrumar-o-quarto"> Arrumar o quarto
-```
-
-*Note que usamos o mesmo nome "tarefa" para todas as opções.* Isso faz com que consigamos selecionar somente uma tarefa entre as três. Se os nomes fossem diferentes, seriamos capaz de selecionar mais de um item.
-
-O resultado desse HTML é:
-
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ip8ngamn71rpolpw4i0a.png)
-
-____
-
-* Para a seleção através uma lista de dados usamos a *tag \<input>* e colocamos o nome da lista no atributo *list=""*, ~~não usamos o atributo *type=""*~~ nesse caso;
-
-* A lista de dados vai entre as *tags \<datalist id="lista-status">\</datalist>*, onde *id* é o mesmo nome dado no atributo *list=""* da *tag \<input>* e;
-
-* Cada dado da lista fica na *tag \<option value="">*
-
-```html
-<label for="status">Selecione o status da tarefa</label>
-<input name="status" list="lista-status" placeholder="clique e selecione">
-<datalist id="lista-status">
-     <option value="Aguardando">
-     <option value="Em Processo">
-     <option value="Concluído">
-</datalist>   
-```
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/gh1axt24vk8nu5n0zrnl.png)
 
 O resultado é:
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/oy3pmxlb65hyaszcsttm.png)
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/uurnbqbbfiexerqkeneq.gif)
 
-____
+___
 
-#### O botão "Enviar" é muito simples, é uma *tag \<input>* do *type="submit"* e o texto do botão fica no atributo *value=""*.
+### **Tag \<dl>**
+Existem as listas ordenadas *\<ol>* e as listas não ordenadas *\<ul>*. Mas você sabia que existe uma lista de descrições *\<dl>*? Geralmente essa lista é usada em glossários. Vamos ao exemplo de código:
 
 ```html
-<input type="submit" value="Enviar">
+<h2>Filmes do Harry Potter:</h2>
+
+    <dl>
+        <dt>Harry Potter e a Pedra Filosofal (2001)</dt>
+        <dd>Descrição do 1º filme.</dd>
+
+        <dt>Harry Potter e a Câmara Secreta (2002)</dt>
+        <dd>Descrição do 2º filme.</dd>
+
+        <dt>Harry Potter e o Prisioneiro de Azkaban (2004)</dt>
+        <dd>Descrição do 3º filme.</dd>
+
+        <dt>Harry Potter e o Cálice de Fogo (2005)</dt>
+        <dd>Descrição do 4º filme.</dd>
+
+        <dt>Harry Potter e a Ordem da Fênix (2007)</dt>
+        <dd>Descrição do 5º filme.</dd>
+
+        <dt>arry Potter e o Enigma do Príncipe (2009)</dt>
+        <dd>Descrição do 6º filme.</dd>
+
+        <dt>Harry Potter e as Relíquias da Morte: Parte 1 (2010)</dt>
+        <dd>Descrição do 7º filme.</dd>
+
+        <dt>Harry Potter e as Relíquias da Morte: Parte 2 (2011)</dt>
+        <dd>Descrição do 8º filme.</dd>
+    </dl>
+
+    <img src="./harry-potter-movies.png" alt="Capas de todos os filmes do Harry Potter">
 ```
+
+No código acima, temos uma lista *\<dl>* envolvendo todos os filmes do Harry Potter:
+* cada título de filme está na tag *\<dt> description term*;
+* cada descrição do filme está na tag *\<dd> descriptions*.
+
 O resultado é:
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/yn5lhg1912ntb4gzjxuo.png)
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/oozao1frotvtfp3fxl8x.png)
 
-____
+___
 
-**Juntando todos os HTML, temos:**
-
-```html
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" placeholder="Insira seu nome" name="nome">
-        <br>
-        <label for="senha">Senha:</label>
-        <input type="password" placeholder="Insira sua senha" name="senha">
-    
-        <label for="tarefa">Seleciona uma tarefa:</label>
-        <br>
-        <input name="tarefa" type="radio" value="varrer-a-casa"> Varrer a casa
-        <input name="tarefa" type="radio" value="lavar-a-louca"> Lavar a louça
-        <input name="tarefa" type="radio" value="arrumar-o-quarto"> Arrumar o quarto
-        <br>
-
-        <label for="status">Selecione o status da tarefa</label>
-        <input name="status" list="lista-status" placeholder="clique e selecione">
-        <datalist id="lista-status">
-            <option value="Aguardando">
-            <option value="Em Processo">
-            <option value="Concluído">
-        </datalist>         
-
-        <input type="submit" value="Enviar">
-    </form>
-```
-
-Como resultado:
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/7l2hdh0tb33qcrecy2kx.png)
-
-____
-
-**Reparou que está faltando algo ainda?**
-
-Nos campos de seleção há uma divisória, agrupando todos esses campos do formulário (*radio* e *datalist*). Isso se chama *fieldset*!
-
-* Usamos a *tag \<fieldset>* para agrupar e;
-* Podemos dar um nome para o agrupamento usando *tag \<legend>*:
-
-```html
-        <fieldset>
-            <legend>Seleciona uma tarefa:</legend>
-            <input name="tarefa" type="radio" value="varrer-a-casa"> Varrer a casa
-            <input name="tarefa" type="radio" value="lavar-a-louca"> Lavar a louça
-            <input name="tarefa" type="radio" value="arrumar-o-quarto"> Arrumar o quarto
-            
-            <br>
-
-            <label for="status">Selecione o status da tarefa</label>
-            <input name="status" list="lista-status" placeholder="clique e selecione">
-            <datalist id="lista-status">
-                <option value="Aguardando">
-                <option value="Em Processo">
-                <option value="Concluído">
-            </datalist>
-        </fieldset>
-```
-
-## O resultado final do HTML completo é:
-
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ok062ze4v2413e5s2pcp.png)
+**O post já está ficando grande e ainda tenho tags interessantes para te mostrar! Então vamos chamar esse post de Parte 1 e vou fazer em breve a Parte 2 para vocês!**
 
 ____
 
