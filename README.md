@@ -171,3 +171,7 @@ Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre c
 [2 - Tags HTML mais utilizadas, Código Semântico e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/2%20-%20Tags%20HTML%20mais%20utilizadas%2C%20C%C3%B3digo%20Sem%C3%A2ntico%20e%20Dicas%20do%20VS%20Code.md)
 
 [3 - Tags HTML para Tabelas e Dicas do VS Code.](https://github.com/dwtoledo/posts-front-end/blob/main/3%20-%20Tags%20HTML%20para%20Tabelas%20e%20Dicas%20do%20VS%20Code.md)
+
+[4 - Tags HTML para Formulários e Dicas do VS Code.]()
+
+[5 - Tags HTML que você precisa conhecer e Dicas do VS Code.]()

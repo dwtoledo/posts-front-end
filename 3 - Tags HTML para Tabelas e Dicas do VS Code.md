@@ -202,4 +202,4 @@ Lá a gente faz muitas lives de front-end e tem uma playlist muito legal sobre c
 
 *Próximas publicações:*
 
-*Em breve* 4 - Tags HTML para Formulários e Dicas do VS Code.
+[4 - Tags HTML para Formulários e Dicas do VS Code.]()
